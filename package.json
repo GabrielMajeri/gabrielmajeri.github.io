@@ -1,0 +1,30 @@
+{
+  "name": "personal-site",
+  "private": true,
+  "description": "Gabriel Majeri's personal site",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GabrielMajeri/gabrielmajeri.github.io"
+  },
+  "dependencies": {
+    "gatsby": "^2.20.18",
+    "gatsby-plugin-react-helmet": "^3.2.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.4"
+  }
+}
