@@ -1,5 +1,7 @@
 # Personal Site
 
+![Gatsby Publish](https://github.com/GabrielMajeri/gabrielmajeri.github.io/workflows/Gatsby%20Publish/badge.svg)
+
 This repo contains the code for my personal website, [gabrielmajeri.ro](https://www.gabrielmajeri.ro).
 
 It serves as a portfolio, CV and blog.
