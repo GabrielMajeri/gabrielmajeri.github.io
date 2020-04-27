@@ -35,6 +35,52 @@ export default () => (
       </p>
     </section>
     <section>
+      <h2>Web Development Portfolio</h2>
+      <p>
+        The modern web has evolved to be the ultimate medium of expression. The
+        best way to get your story across is through a well-designed web site.
+      </p>
+      <p>
+        I initially <em>despised</em> web design and found it boring; it seemed
+        to provide no intellectual challenge. Over time, I've grown to realise
+        the importance of presenting my ideas in a concise and accessible
+        manner, and have since challenged myself to improve my web development
+        skills.
+      </p>
+      <p>
+        I've worked on the projects below as part of the{" "}
+        <a href="https://www.freecodecamp.org/">freeCodeCamp</a> certification
+        &mdash; in my opinion, still the best resource for learning web
+        development.
+      </p>
+      <h3>Front End Projects</h3>
+      <ul>
+        <li>
+          <a href="https://www.gabrielmajeri.ro/fcc-tribute-page/">
+            Tribute Page
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gabrielmajeri.ro/fcc-survey-form/">
+            Survey Form
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gabrielmajeri.ro/fcc-product-landing-page/">
+            Product Landing Page
+          </a>
+        </li>
+      </ul>
+      <h3>React Projects</h3>
+      <ul>
+        <li>
+          <a href="https://www.gabrielmajeri.ro/fcc-markdown-previewer/">
+            Markdown previewer
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
       <h2>Contact</h2>
       <p>
         The best way to reach me is through my{" "}
