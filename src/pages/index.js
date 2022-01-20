@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-export default () => (
+const HomePage = () => (
   <main>
     <Helmet>
       <html lang="en" />
@@ -100,3 +100,5 @@ export default () => (
     </footer>
   </main>
 );
+
+export default HomePage;

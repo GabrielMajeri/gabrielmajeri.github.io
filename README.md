@@ -18,13 +18,13 @@ to set up a development environment.
 To run a local development server with hot-reload enabled:
 
 ```sh
-$ gatsby develop
+$ npm run develop
 ```
 
 To build a production-ready static site:
 
 ```sh
-$ gatsby build
+$ npm run build
 ```
 
 ## License
