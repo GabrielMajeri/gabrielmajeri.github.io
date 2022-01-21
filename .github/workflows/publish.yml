@@ -12,12 +12,6 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2
 
-      - name: Print Node.js version
-        run: node --version
-
-      - name: Print npm version
-        run: npm --version
-
       - name: Cache dependencies
         uses: actions/cache@v2
         with:
@@ -27,6 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci --ignore-scripts
+
+      - name: Print system info
+        run: npx gatsby info
 
       - name: Run tests
         run: npm test
