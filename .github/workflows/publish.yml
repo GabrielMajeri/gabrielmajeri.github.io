@@ -1,17 +1,25 @@
-name: Gatsby Publish
+name: Automatically build and publish site
 
 on:
   push:
-    branches: [ code ]
+    branches: [code]
 
 jobs:
-  build:
+  test_build_deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+      - name: Check out source code
+        uses: actions/checkout@v2
 
-    - uses: enriikke/gatsby-gh-pages-action@v2
-      with:
-        access-token: ${{ secrets.ACCESS_TOKEN }}
-        deploy-branch: main
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build and deploy to GitHub Pages
+        uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: main
