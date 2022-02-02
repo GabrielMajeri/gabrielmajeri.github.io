@@ -28,11 +28,14 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Build and deploy to GitHub Pages
-        uses: enriikke/gatsby-gh-pages-action@v2
+      - name: Build static files
+        run: npm run build
         env:
           GATSBY_CPU_COUNT: 2
           NODE_OPTIONS: --max-old-space-size=16384
+
+      - name: Build and deploy to GitHub Pages
+        uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: main
