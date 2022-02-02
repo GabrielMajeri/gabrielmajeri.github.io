@@ -31,10 +31,10 @@ jobs:
       - name: Build static files
         run: npm run build
         env:
-          GATSBY_CPU_COUNT: 1
+          GATSBY_CPU_COUNT: 2
+          NODE_OPTIONS: --max-old-space-size=16384
 
       - name: Build and deploy to GitHub Pages
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
-          gatsby-args: --verbose
