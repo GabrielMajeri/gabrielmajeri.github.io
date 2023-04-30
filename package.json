@@ -18,9 +18,15 @@
     "type": "git",
     "url": "https://github.com/GabrielMajeri/gabrielmajeri.github.io"
   },
+  "engines": {
+    "npm": ">=8.7.0"
+  },
+  "overrides": {
+    "react": "$react"
+  },
   "dependencies": {
-    "gatsby": "^4.5.4",
-    "gatsby-plugin-react-helmet": "^5.5.0",
+    "gatsby": "^4.25.6",
+    "gatsby-plugin-react-helmet": "^5.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0"
@@ -29,7 +35,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "babel-jest": "^27.4.6",
-    "babel-preset-gatsby": "^2.5.2",
+    "babel-preset-gatsby": "^2.25.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.7",
     "prettier": "^2.5.1"
