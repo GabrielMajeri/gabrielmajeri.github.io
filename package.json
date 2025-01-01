@@ -17,9 +17,6 @@
     "type": "git",
     "url": "https://github.com/GabrielMajeri/gabrielmajeri.github.io"
   },
-  "engines": {
-    "npm": ">=11.0.0"
-  },
   "dependencies": {
     "astro": "^5.1.1"
   },
