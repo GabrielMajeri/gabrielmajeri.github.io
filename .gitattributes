@@ -1,1 +1,3 @@
+# Automatically detect text files and
+# ensure they use LF as line ending character
 * text=auto eol=lf
