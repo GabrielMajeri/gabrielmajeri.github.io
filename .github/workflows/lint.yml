@@ -1,0 +1,31 @@
+name: Check code quality
+
+on:
+  push:
+  workflow_dispatch:
+
+# Allow this job to clone the repo
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check formatting
+        run: npm run check:format
+
+      - name: Run unit tests
+        run: npm test
