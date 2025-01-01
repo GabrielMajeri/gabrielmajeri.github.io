@@ -1,6 +1,6 @@
 # Personal Site
 
-![Gatsby Publish](https://github.com/GabrielMajeri/gabrielmajeri.github.io/workflows/Gatsby%20Publish/badge.svg)
+[![Deploy to GitHub Pages](https://github.com/GabrielMajeri/gabrielmajeri.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/GabrielMajeri/gabrielmajeri.github.io/actions/workflows/deploy.yml)
 
 This repo contains the code for my personal website, [gabrielmajeri.ro](https://www.gabrielmajeri.ro).
 
@@ -8,17 +8,13 @@ It serves as a portfolio, CV and blog.
 
 ## Building
 
-This site is built using [Gatsby](https://www.gatsbyjs.org/), a framework for
-building [static](https://en.wikipedia.org/wiki/Static_web_page) sites using
-[React](https://reactjs.org/).
-
-Follow the [quick start](https://www.gatsbyjs.org/docs/quick-start/) instructions
-to set up a development environment.
+This site is built using [Astro](https://astro.build/), a framework for
+building fast websites mixing static and dynamic content.
 
 To run a local development server with hot-reload enabled:
 
 ```sh
-$ npm run develop
+$ npm run dev
 ```
 
 To build a production-ready static site:
