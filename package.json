@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "test": "vitest",
     "format": "prettier --write .",
     "check:format": "prettier --check ."
   },
@@ -17,10 +18,14 @@
     "type": "git",
     "url": "https://github.com/GabrielMajeri/gabrielmajeri.github.io"
   },
+  "overrides": {
+    "vite": "6.0.3"
+  },
   "dependencies": {
     "astro": "^5.1.1"
   },
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "prettier": "^3.4.2",
+    "vitest": "^2.1.8"
   }
 }
